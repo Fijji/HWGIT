@@ -1,5 +1,6 @@
+package hw1;
 
-public class Fourth {
+public class ThirdClass {
     public static void main(String[] args) {
         print();
     }
