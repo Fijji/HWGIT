@@ -1,4 +1,4 @@
-package hw4.task1;
+package hw4;
 
 public class USBank extends Bank{
     public USBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {

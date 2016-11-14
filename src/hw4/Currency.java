@@ -1,4 +1,4 @@
-package hw4.task1;
+package hw4;
 
 public enum Currency {
     USD, EUR

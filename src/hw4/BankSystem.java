@@ -1,4 +1,4 @@
-package hw4.task1;
+package hw4;
 
 public interface BankSystem {
     void withdrawOfUser(User user, int amount);

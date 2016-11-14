@@ -1,6 +1,6 @@
 package hw7;
 
-import hw4.task1.Currency;
+import hw4.Currency;
 
 public class Order implements Comparable<Order> {
     private long id;

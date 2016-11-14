@@ -1,40 +1,39 @@
-package hw4.task1;
+package hw4;
 
-public class ChinaBank extends Bank {
-    public ChinaBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+public class EUBank extends Bank {
+    public EUBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
-
     @Override
     int getLimitOfWithdrawal() {
         if (getCurrency() == Currency.USD)
-            return 100;
-        else return 150;
+            return 2000;
+        else return 2200;
     }
 
     @Override
     int getLimitOfFunding() {
         if(getCurrency() == Currency.EUR)
-            return 5000;
+            return 20000;
         else return 10000;
     }
 
     @Override
     int getMonthlyRate() {
         if(getCurrency()==Currency.USD)
-            return 1;
-        else return 0;
+            return 0;
+        else return 1;
     }
 
     @Override
     int getCommission(int summ) {
         if(getCurrency()==Currency.USD){
-            if (summ>1000)return 5;
-            else return 3;
+            if (summ>1000)return 7;
+            else return 5;
         }
         else {
-            if(summ>1000)return 11;
-            else return 10;
+            if(summ>1000)return 4;
+            else return 2;
         }
     }
 }
